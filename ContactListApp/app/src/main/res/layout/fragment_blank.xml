@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Contacts"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:layout_margin="2dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add_button"
+            android:text="Add"
+            android:layout_weight="1"
+            android:onClick="Add"
+            android:layout_gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:text="Delete"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:onClick="DeleteEntries"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
